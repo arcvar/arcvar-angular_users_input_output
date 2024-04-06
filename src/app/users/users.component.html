@@ -1,8 +1,8 @@
 <ol>
-  <li *ngFor="let user of userList; let userIndex = index">
+  <li *ngFor="let user of userList; let usrIndex = index">
     <app-user-single
-      [aliasSingleUser]="user"
-      [userIndex]="userIndex"
+      [singleUser]="user"
+      [userIndex]="usrIndex"
       (deleteUser)="removeUser($event)"
     ></app-user-single>
   </li>
